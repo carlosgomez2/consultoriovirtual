@@ -1,0 +1,70 @@
+<!-- jQuery -->
+    <script src="/assets/javascripts/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/assets/javascripts/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/assets/javascripts/classie.js"></script>
+    <script src="/assets/javascripts/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/assets/javascripts/jqBootstrapValidation.js"></script>
+    <script src="/assets/javascripts/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/assets/javascripts/freelancer.js"></script>
+
+    <%= javascript_include_tag "jquery" %>
+    <%= javascript_include_tag "bootstrap" %>
+    <%= javascript_include_tag "classie" %>
+    <%= javascript_include_tag "cbpAnimatedHeader" %>
+    <%= javascript_include_tag "jqBootstrapValidation" %>
+    <%= javascript_include_tag "contact_me" %>
+    <%= javascript_include_tag "freelancer" %>
+    
+
+
+ <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="stylesheets/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <%= stylesheet_link_tag "bootstrap" %>
+    <%= stylesheet_link_tag "freelancer" %>
+    <%= stylesheet_link_tag "font-awesome" %>
+
+    <!-- imagenes -->
+
+        <%= link_to(image_tag("background.jpg", :alt => "home image", :width => 100, :height => 100, :title => "Click here to return to Home") "/") %>
+
+<%= link_to(image_tag("images/portfolio/cabin.png", :alt => "") "/") %>
+
+<%=link_to(image_tag("12roots-logo.png",:size => "209x50", :alt=> "12roots"),
+ {:controller=>"pages", :action=>"home"}, :title=>"Return Home", :class=>"logo") %>
+
+<%=link_to(image_tag("images/portfolio/cabin.png",:alt=> ""),
+ {:controller=>"pages", :action=>"home"}, :title=>"", :class=>"img-responsive") %>
+
+
+<%= image_tag ("cabin.png"), :alt=> "cabin", :title=>"cabin", :class=>"img-responsive" %>
+<%= image_tag ("cake.png"), :alt=> "cake", :title=>"cake", :class=>"img-responsive" %>
+<%= image_tag ("circus.png"), :alt=> "circus", :title=>"circus", :class=>"img-responsive" %>
+<%= image_tag ("game.png"), :alt=> "game", :title=>"game", :class=>"img-responsive" %>
+<%= image_tag ("safe.png"), :alt=> "safe", :title=>"safe", :class=>"img-responsive" %>
+<%= image_tag ("submarine.png"), :alt=> "submarine", :title=>"submarine", :class=>"img-responsive" %>
+<%= image_tag ("profile.png"), :alt=> "profile", :title=>"profile", :class=>"img-responsive" %>

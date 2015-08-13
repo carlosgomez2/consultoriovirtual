@@ -1,0 +1,25 @@
+== CONSULTORIO VIRTUAL
+
+Gestión de clínicas médicas y consultorios.
+
+== GEMAS:
+
+Gemas para el landingpage
+* gem 'twitter-bootstrap-rails', '~> 3.2.0'
+* gem 'bootstrap-sass', '~> 3.3.5.1'
+* gem 'therubyracer', '~> 0.12.2'
+* gem 'less-rails', '~> 2.7.0'
+
+Componentes para crear formularios
+* gem 'simple_form', '~> 3.1.0'
+
+Login con Devise
+* gem 'devise', '~> 3.5.1'
+
+SCSS para stylesheets
+* gem 'sass-rails', '>= 3.2'
+
+Awesome Font
+* gem 'font-awesome-rails'
+
+

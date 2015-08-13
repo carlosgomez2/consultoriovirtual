@@ -1,0 +1,1 @@
+rails g scaffold Registro name:string second_name:string last_name:string second_last_name:string principal_phone:integer cellphone:integer email:string ocupation:string birth_date:date address:string postal_code:integer city:string state:string
