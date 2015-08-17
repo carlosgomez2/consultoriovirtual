@@ -1,0 +1,1 @@
+json.extract! @registro, :id, :Nombre, :Segundo_Nombre, :Apellido_Paterno, :Apellido_Materno, :Telefono_principal, :Celular, :Email, :Ocupacion, :Fecha_de_Nacimiento, :Direccion, :Codigo_Postal, :Ciudad, :Estado, :created_at, :updated_at
