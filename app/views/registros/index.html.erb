@@ -1,9 +1,9 @@
 <div class="page-header">
   <%= link_to new_registro_path, class: 'btn btn-primary' do %>
     <span class="glyphicon glyphicon-plus"></span>
-    New Registro
+    Nuevo Paciente
   <% end %>
-  <h1>Listing registros</h1>
+  <h1>Pacientes Ingresados</h1>
 </div>
 
 <div class="table-responsive">
@@ -23,9 +23,6 @@
             <th>Codigo postal</th>
             <th>Ciudad</th>
             <th>Estado</th>
-            <th></th>
-        <th></th>
-        <th></th>
       </tr>
     </thead>
 
@@ -44,9 +41,9 @@
             <td><%= registro.Codigo_Postal %></td>
             <td><%= registro.Ciudad %></td>
             <td><%= registro.Estado %></td>
-            <td><%= link_to 'Show', registro %></td>
-        <td><%= link_to 'Edit', edit_registro_path(registro) %></td>
-        <td><%= link_to 'Destroy', registro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Ver', registro %></td>
+        <td><%= link_to 'Editar', edit_registro_path(registro) %></td>
+        <td><%= link_to 'Eliminar', registro, method: :delete, data: { confirm: 'Estas seguro de que quieres eliminar este registro?' } %></td>
       <% end %>
     </tbody>
   </table>
