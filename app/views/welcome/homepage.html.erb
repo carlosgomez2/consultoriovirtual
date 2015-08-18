@@ -64,7 +64,8 @@
                     <li class="page-scroll">
                         <a href="#contact">Contacto</a>
                     </li>
-                    <!-- Login -->
+                </ul>
+                <!-- Login -->
                     <p class="navbar-text pull-right">
                     <% if user_signed_in? %>Bienvenido <%= current_user.email %>
                     <%= link_to 'Editar perfil', edit_user_registration_path, :class => 'navbar-link' %> |
@@ -74,7 +75,6 @@
                     <%= link_to "Ingresar", new_user_session_path, :class => 'navbar-link'  %>
                     <% end %>
                     <!-- /.login -->
-                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
