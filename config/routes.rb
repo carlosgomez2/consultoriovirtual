@@ -1,12 +1,16 @@
 Rails.application.routes.draw do
   
+  devise_for :users
   resources :registros
 
   # You can have the root of your site routed with "root" 
-  root 'welcome#homepage'
-
+  #root 'welcome#homepage'
+  root to: 'welcome#homepage'
   get 'welcome/homepage'
   get 'start/index'
+  get 'users/sing_up'
+  get 'users/sing_in'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
