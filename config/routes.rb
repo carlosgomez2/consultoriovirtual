@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :receta
+
   devise_for :users
   resources :registros
 
