@@ -1,0 +1,29 @@
+<div class="page-header">
+  <%= link_to new_recetum_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    Nueva Receta
+  <% end %>
+  <h1>Lista de Recetas</h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Receta</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @receta) do |recetum| %>
+            <td><%= recetum.Receta %></td>
+            <td><%= link_to 'Show', recetum %></td>
+        <td><%= link_to 'Edit', edit_recetum_path(recetum) %></td>
+        <td><%= link_to 'Destroy', recetum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>
