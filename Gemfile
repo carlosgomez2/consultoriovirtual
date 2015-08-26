@@ -14,6 +14,8 @@ gem 'devise', '~> 3.5.1'
 gem 'sass-rails', '>= 3.2'
 # Awesome Font
 gem 'font-awesome-rails'
+#generador de scaffold
+gem 'bootstrap-generators', '~> 3.3.4'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

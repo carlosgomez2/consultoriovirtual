@@ -4373,6 +4373,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-text {
   margin-top: 19.5px;
   margin-bottom: 19.5px;
+  padding-top: 4px;
 }
 @media (min-width: 768px) {
   .navbar-text {

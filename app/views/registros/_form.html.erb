@@ -1,0 +1,23 @@
+<%= simple_form_for(@registro) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :Nombre %>
+    <%= f.input :Segundo_Nombre %>
+    <%= f.input :Apellido_Paterno %>
+    <%= f.input :Apellido_Materno %>
+    <%= f.input :Telefono_principal %>
+    <%= f.input :Celular %>
+    <%= f.input :Email %>
+    <%= f.input :Ocupacion %>
+    <%= f.input :Fecha_de_Nacimiento %>
+    <%= f.input :Direccion %>
+    <%= f.input :Codigo_Postal %>
+    <%= f.input :Ciudad %>
+    <%= f.input :Estado %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

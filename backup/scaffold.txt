@@ -1,1 +1,4 @@
-rails g scaffold Registro name:string second_name:string last_name:string second_last_name:string principal_phone:integer cellphone:integer email:string ocupation:string birth_date:date address:string postal_code:integer city:string state:string
+rails g scaffold Registro Nombre:string Segundo_Nombre:string Apellido_Paterno:string Apellido_Materno:string Telefono_principal:integer Celular:integer Email:string Ocupacion:string Fecha_de_Nacimiento:date Direccion:string Codigo_Postal:integer Ciudad:string Estado:string
+
+
+<!-- <a class="navbar-brand">VirtualDoc</a> -->

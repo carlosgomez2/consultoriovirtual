@@ -1,0 +1,53 @@
+<div class="page-header">
+  <%= link_to registros_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Atras
+  <% end %>
+  <%= link_to edit_registro_path(@registro), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Editar
+  <% end %>
+  <h1>Datos del Paciente</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Nombre:</dt>
+  <dd><%= @registro.Nombre %></dd>
+
+  <dt>Segundo nombre:</dt>
+  <dd><%= @registro.Segundo_Nombre %></dd>
+
+  <dt>Apellido paterno:</dt>
+  <dd><%= @registro.Apellido_Paterno %></dd>
+
+  <dt>Apellido materno:</dt>
+  <dd><%= @registro.Apellido_Materno %></dd>
+
+  <dt>Telefono principal:</dt>
+  <dd><%= @registro.Telefono_principal %></dd>
+
+  <dt>Celular:</dt>
+  <dd><%= @registro.Celular %></dd>
+
+  <dt>Email:</dt>
+  <dd><%= @registro.Email %></dd>
+
+  <dt>Ocupacion:</dt>
+  <dd><%= @registro.Ocupacion %></dd>
+
+  <dt>Fecha de nacimiento:</dt>
+  <dd><%= @registro.Fecha_de_Nacimiento %></dd>
+
+  <dt>Direccion:</dt>
+  <dd><%= @registro.Direccion %></dd>
+
+  <dt>Codigo postal:</dt>
+  <dd><%= @registro.Codigo_Postal %></dd>
+
+  <dt>Ciudad:</dt>
+  <dd><%= @registro.Ciudad %></dd>
+
+  <dt>Estado:</dt>
+  <dd><%= @registro.Estado %></dd>
+
+</dl>

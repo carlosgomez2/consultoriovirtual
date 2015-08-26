@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -43,7 +44,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <%= link_to "VirtualDoc", welcome_homepage_path, class: "navbar-brand" %>
+                <a class="navbar-brand" href="#page-top">VirtualDoc</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,59 +53,110 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <!-- Login -->
-                    <p class="navbar-text pull-right">
-                    <% if user_signed_in? %>Bienvenido <%= current_user.email %>
-                    <%= link_to 'Editar perfil', edit_user_registration_path, :class => 'navbar-link' %> |
-                    <%= link_to "Salir", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-                    <% else %>
-                    <%= link_to "Registrarse", new_user_registration_path, :class => 'navbar-link'  %> |
-                    <%= link_to "Ingresar", new_user_session_path, :class => 'navbar-link'  %>
-                    <% end %>
-                    <!-- /.login -->
+                    <li class="page-scroll">
+                        <a href="#portfolio">Caracteristicas</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Precios</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Registro</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contacto</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <!-- Inicio Grid Section -->
+
+   
+
+    <!-- Portfolio Grid Section -->
     <section id="start">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Que deseas hacer?</h2>
+                    <h2>Inicio</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 start-item">
-                    <div class="page-header">
-									  <%= link_to new_registro_path, class: 'btn btn-primary' do %>
-									    <span class="glyphicon glyphicon-plus"></span>
-									    Nuevo Paciente
-									  <% end %>
-										</div>
+                    <p>contenido del inicio</p>
                 </div>
                 <div class="col-sm-4 start-item">
-                    <div class="page-header">
-									  <%= link_to registros_path, class: 'btn btn-primary' do %>
-									    <span class="glyphicon glyphicon-search"></span>
-									    Pacientes Ingresados
-									  <% end %>
-										</div>
+                    <p>contenido del inicio</p>
                 </div>
                 <div class="col-sm-4 start-item">
-                    <div class="page-header">
-									  <%= link_to receta_path, class: 'btn btn-primary' do %>
-									    <span class="glyphicon glyphicon-list-alt"></span>
-									    Generar Receta
-									  <% end %>
-										</div>
+                    <p>contenido del inicio</p>
+                </div>
+                <div class="col-sm-4 start-item">
+                    <p>contenido del inicio</p>
+                </div>
+                <div class="col-sm-4 start-item">
+                    <p>contenido del inicio</p>
+                </div>
+                <div class="col-sm-4 start-item">
+                    <p>contenido del inicio</p>
                 </div>
             </div>
         </div>
     </section>
+
+   
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Your Website 2014
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll visible-xs visible-sm">
