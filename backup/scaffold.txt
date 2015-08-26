@@ -2,3 +2,16 @@ rails g scaffold Registro Nombre:string Segundo_Nombre:string Apellido_Paterno:s
 
 
 <!-- <a class="navbar-brand">VirtualDoc</a> -->
+
+
+<!-- Login -->
+                    <p class="navbar-text pull-right">
+                    <% if user_signed_in? %>Bienvenido <%= current_user.email %>
+                    <%= link_to 'Editar perfil', edit_user_registration_path, :class => 'navbar-link' %> |
+                    <%= link_to "Salir", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+                    <% else %>
+                    <%= link_to "Registrarse", new_user_registration_path, :class => 'navbar-link'  %> |
+                    <%= link_to "Ingresar", new_user_session_path, :class => 'navbar-link'  %>
+                    <% end %>
+                    <!-- /.login -->
+
