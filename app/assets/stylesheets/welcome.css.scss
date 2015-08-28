@@ -8,13 +8,17 @@
 	padding-right: 5px;
 }
 
+section.success a,
+section.success a:hover,
+section.success a:focus,
+section.success a:active,
+section.success a.active {
+  color: #FFFFFF;
+  outline: none;
+}
+
 /*--------- Font ------------*/
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
-/* fontawesome */
-[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
-}
 * {
     margin: 0;
     padding: 0;
@@ -65,12 +69,13 @@ body {
     margin-bottom: 4rem;
 }
 .block{
-    width: 30%;    
-    margin: 0 15px;
+    margin: 0 auto;
     overflow: hidden;
+    width: 500px;
+    border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;    
+
 /*    border: 1px solid red;*/
 }
 /*Shared properties*/
@@ -123,7 +128,7 @@ body {
 }
 .hint{
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 .features{
     list-style-type: none;    
@@ -131,7 +136,7 @@ body {
     text-align: left;
     color: #9C9C9C;
     padding:30px 22%;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
 }
 .features li{
     padding:15px 0;
@@ -148,14 +153,20 @@ body {
 
 /*PROFESSIONAL*/
 .professional .title{
-    background: #3EC6E0;
+    background: #76828d;
 }
 .professional .content,.professional .pt-footer{
-    background: #53CFE9;
+    background: #95a5a6;
 }
 .professional .content:after{	
-	border-top-color: #53CFE9;	
+	border-top-color: #95a5a6;	
 }
 .professional .pt-footer:after{
     border-top-color: #FFFFFF;
+}
+
+@media (max-width: 600px){
+    .block{
+        width: 90%;
+    }
 }
