@@ -4,8 +4,8 @@ class RegistrosController < ApplicationController
   respond_to :html
 
   def index
-    @registros = Registro.all
-    respond_with(@registros)
+    @registros = Registro.search(params[:search])
+    # respond_with(@registros)
   end
 
   def show
@@ -44,4 +44,9 @@ class RegistrosController < ApplicationController
     def registro_params
       params.require(:registro).permit(:Nombre, :Segundo_Nombre, :Apellido_Paterno, :Apellido_Materno, :Telefono_principal, :Celular, :Email, :Ocupacion, :Fecha_de_Nacimiento, :Direccion, :Codigo_Postal, :Ciudad, :Estado)
     end
+
+    def search_params
+      params.require(:search).permit(:Nombre, :Segundo_Nombre, :Apellido_Paterno, :Apellido_Materno, :Telefono_principal, :Celular, :Email, :Ocupacion, :Fecha_de_Nacimiento, :Direccion, :Codigo_Postal, :Ciudad, :Estado)
+    end
+
 end
