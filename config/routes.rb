@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :consulta
+
   resources :receta
 
   devise_for :users
