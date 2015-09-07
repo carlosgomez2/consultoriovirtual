@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Motivo_Consulta: MyString
+  Diagnostico: MyText
+  TX: MyText
+  Labs: MyText
+  Observaciones: MyText
+
+two:
+  Motivo_Consulta: MyString
+  Diagnostico: MyText
+  TX: MyText
+  Labs: MyText
+  Observaciones: MyText

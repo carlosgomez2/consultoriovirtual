@@ -14,6 +14,21 @@
  *= require_self
  */
 
-.glyphicon-heart{
-	color: #EC407A;
+
+//css para devise
+.contenedor-bloque{
+	display: inline-block;
+
+}
+.contenedor{
+  width: 500px;
+}
+.form-inputs, .form-actions, .contenedor{
+	width: 500px;
+	margin: 0 auto;
+}
+@media (max-width: 600px){
+	.form-inputs, .form-actions, .contenedor{
+		width: 80%;
+	}
 }
