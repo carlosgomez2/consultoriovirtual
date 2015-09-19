@@ -1,8 +1,3 @@
-<br/>
-<br/>
-<br/>
-<br/>
-
 <!-- Search -->
 <div class="row">
   <div class="col-xs-12 pull-right">
@@ -23,9 +18,9 @@
     <thead>
       <tr>
             <th>Nombre</th>
-            <th>Segundo nombre</th>
+            <!-- <th>Segundo nombre</th>
             <th>Apellido paterno</th>
-            <th>Apellido materno</th>
+            <th>Apellido materno</th> -->
             <th>Telefono principal</th>
             <!-- <th>Celular</th> -->
             <th>Email</th>
@@ -40,10 +35,10 @@
 
     <tbody>
       <%= content_tag_for(:tr, @registros) do |registro| %>
-            <td><%= registro.Nombre %></td>
-            <td><%= registro.Segundo_Nombre %></td>
-            <td><%= registro.Apellido_Paterno %></td>
-            <td><%= registro.Apellido_Materno %></td>
+            <td><%= registro.Nombre %> <%= registro.Segundo_Nombre %> <%= registro.Apellido_Paterno %> <%= registro.Apellido_Materno %></td>
+            <!-- <td></td>
+            <td></td>
+            <td></td> -->
             <td><%= registro.Telefono_principal %></td>
             <!-- <td><%= registro.Celular %></td> -->
             <td><%= registro.Email %></td>
@@ -54,8 +49,8 @@
             <td><%= registro.Ciudad %></td>
             <td><%= registro.Estado %></td> -->
             <td><%= link_to 'Ver', registro, class: "btn btn-info" %></td>
-        <td><%= link_to 'Editar', edit_registro_path(registro), class: "btn btn-warning" %></td>
-        <td><%= link_to 'Eliminar', registro, class: "btn btn-danger", method: :delete, data: { confirm: 'Estas seguro de que quieres eliminar este registro?' } %></td>
+        <!-- <td><%= link_to 'Editar', edit_registro_path(registro), class: "btn btn-warning" %></td>
+        <td><%= link_to 'Eliminar', registro, class: "btn btn-danger", method: :delete, data: { confirm: 'Estas seguro de que quieres eliminar este registro?' } %></td> -->
       <% end %>
     </tbody>
   </table>

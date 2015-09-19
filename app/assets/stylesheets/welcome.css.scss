@@ -178,7 +178,12 @@ body {
 .register-h2{
     color: #fff;
 }
-
+.text-registro{
+    color: white;
+}
+.btn-registro{
+    padding-top: 2em;
+}
 
 .login{
     font-size: 1em;
@@ -206,11 +211,11 @@ body {
 }
 
 /* Effect 1: Brackets */
-link-none a,
-link-none a:hover,
-link-none a:focus,
-link-none a:active,
-link-none a.active {
+.link-none a,
+.link-none a:hover,
+.link-none a:focus,
+.link-none a:active,
+.link-none a.active {
     text-decoration: none;
 }
 
