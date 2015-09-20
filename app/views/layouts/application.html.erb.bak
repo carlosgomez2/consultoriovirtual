@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sistema para Gestión de Clínicas Médicas">
+    <meta name="author" content="Carlos Gomez">
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'data-turbolinks-track' => true %> <!-- aplication -->
+  	<%= csrf_meta_tags %>
+    <title>Consultorio Virtual</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <%= stylesheet_link_tag "bootstrap" %>
+
+    <!-- Custom CSS -->
+    <%= stylesheet_link_tag "freelancer" %>
+
+    <!-- Custom Fonts -->
+    <%= stylesheet_link_tag "font-awesome" %>
+    <!-- <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"> -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Medicus</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    
+                    <li class="page-scroll">
+                    <a href="#portfolio">Características</a>
+                    </li>
+                    <li class="page-scroll">
+                    <a href="#precios">Precios</a>
+                    </li>
+                    <li class="page-scroll">
+                    <a href="#registro">Registro</a>
+                    </li>
+                    <li class="page-scroll">
+                    <a href="#contact">Contacto</a>
+                    </li>
+                    
+                   <!--  <p class="navbar-text pull-right">
+                    <% if user_signed_in? %>Bienvenido <%= current_user.email %>
+                    <%= link_to 'Editar perfil', edit_user_registration_path, :class => 'navbar-link' %> |
+                    <%= link_to "Salir", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+                    <% else %>
+                    <%= link_to "Registrarse", new_user_registration_path, :class => 'navbar-link'  %> |
+                    <%= link_to "Ingresar", new_user_session_path, :class => 'navbar-link'  %>
+                    <% end %> -->
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="login">
+      <p class="navbar-text pull-right login login-wrap">
+        <% if user_signed_in? %> Bienvenido <%= current_user.email %>
+        <%= link_to "Salir", destroy_user_session_path, method: :get, :class => 'login btn btn-danger btn-sm'  %>
+        <% else %>
+        <%= link_to "Registrarse", new_user_registration_path, :class => 'login navbar-link'  %> |
+        <%= link_to "Ingresar", new_user_session_path, :class => 'login navbar-link'  %>
+        <% end %>
+    </div>
+    
+		
+		<%= yield %>
+   
+<!-- Footer del layout -->
+
+<!-- ./Footer del layout -->
+    
+
+
+</body>
+
+</html>
