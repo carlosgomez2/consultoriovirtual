@@ -6,17 +6,24 @@
 	font-size: 0.7em;
 }
 
-.btn-primary{
+.btn-success{
 	width: 100%;
 }
 
 #start{
+	padding-top: 3.2em;
 	height: 100%;
 }
 
-.foot{
+.footer-simple{
+	position: static;
 	bottom: 0;
-	width: 100%;
-	// 	position: relative;
+	width:100%;
+	padding-bottom: 1em;
 }
 
+@media (max-width: 768px){
+	#start{
+		padding-top: 1.2em;
+	}
+}

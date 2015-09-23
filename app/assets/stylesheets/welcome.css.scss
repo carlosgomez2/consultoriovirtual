@@ -153,16 +153,16 @@ body {
 
 /*PROFESSIONAL*/
 .professional .title{
-    background: #76828d;
+    background: #127169;
 }
 .professional .content,.professional .pt-footer{
-    background: #95a5a6;
+    background: #18BC9C;
 }
 .professional .content:after{	
-	border-top-color: #95a5a6;	
+	border-top-color: #18BC9C;	
 }
 .professional .pt-footer:after{
-    border-top-color: #FFFFFF;
+    border-top-color: #18BC9C;
 }
 
 @media (max-width: 600px){
@@ -171,13 +171,18 @@ body {
     }
 }
 
+/*REGISTRO*/
 .register{
-    background-image: url(image-path('rad.png'));
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    padding: 8em;
+    background-color: #2C3E50;
+}
+.register-h2{
+    color: #fff;
+}
+.text-registro{
+    color: white;
+}
+.btn-registro{
+    padding-top: 2em;
 }
 
 .login{
@@ -203,4 +208,56 @@ body {
 
 .fa-heart{
     color: #3EC6E0;
+}
+
+/* Effect 1: Brackets */
+.link-none a,
+.link-none a:hover,
+.link-none a:focus,
+.link-none a:active,
+.link-none a.active {
+    text-decoration: none;
+}
+
+.cl-effect-1{
+    color: white;
+    list-style-type: none;
+    font-size: 1.1em;
+}
+
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+    padding-bottom: 1em;
+}
+
+.cl-effect-1 a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+    color: white;
 }

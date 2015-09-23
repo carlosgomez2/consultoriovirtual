@@ -7,11 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Sistema para Gestión de Clínicas Médicas">
     <meta name="author" content="Carlos Gomez">
-
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-
   	<%= javascript_include_tag 'data-turbolinks-track' => true %> <!-- aplication -->
-
   	<%= csrf_meta_tags %>
     <title>Consultorio Virtual</title>
 
@@ -21,6 +18,9 @@
 
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
+
+<body id="page-top" class="index">
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -32,9 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-
-                <%= link_to 'Medicus', start_index_path, :class => 'navbar-brand' %>
-
+                <a class="navbar-brand" href="#page-top">Medicus</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -57,10 +55,8 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
     
     <!-- Contenido -->
-
 		<%= yield %>
     <!-- ./Contenido -->
    
@@ -81,13 +77,12 @@
         </a>
     </div>
 
-
 </body>
     <%= javascript_include_tag "jquery" %>
     <%= javascript_include_tag "bootstrap" %>
     <%= javascript_include_tag "classie" %>
     <%= javascript_include_tag "cbpAnimatedHeader" %>
-    <!-- JS omitidos -->
-    <!-- jqBootstrapValidation, contact_me -->
+    <%= javascript_include_tag "jqBootstrapValidation" %>
+    <%= javascript_include_tag "contact_me" %>
     <%= javascript_include_tag "freelancer" %>
 </html>
